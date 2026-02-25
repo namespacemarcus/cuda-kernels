@@ -1,3 +1,9 @@
 {
-    "remote.WSL.downloadInBackground": false
+    "remote.WSL.downloadInBackground": false,
+     "[cuda-cpp]": {
+        "editor.defaultFormatter": "ebextensions.clang-format-2025",
+        "editor.formatOnSave": true
+    },
+    "clang-format.executable": "E:\\clang-format\\clang-format.exe",
+    "editor.formatOnSave": true,
 }
