@@ -55,7 +55,7 @@ int main() {
     cudaMalloc((void **)&d_input, N * sizeof(float));
 
     int block_num = (N + THREADS_PER_BLOCK - 1) / THREADS_PER_BLOCK;
-    // 为每个块分配一个float即可，每个块产生一个结果
+    // Allocate one float per block, each block produces one result
     float *output = (float *)malloc(block_num * sizeof(float));
     float *d_output;
     cudaMalloc((void **)&d_output, block_num * sizeof(float));
